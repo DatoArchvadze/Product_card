@@ -1,0 +1,113 @@
+body{
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 100%);
+    margin-bottom: 50px;
+}
+.img_container{
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    overflow: hidden;
+    width:360px;
+    height:285px;
+    position: relative;
+
+
+}
+img{
+    position: absolute;
+    transform: translate(0,-24%);
+    width: 360px;
+    height: 500px;
+
+}
+.product_info > #p1{
+    color: hsl(0, 3%, 62%);
+    margin-top: 20px;
+    font-weight: 700;
+    letter-spacing: 7px;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: -3px;
+    margin-bottom: 10px;
+}
+.product_info > h1{
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Fraunces', serif;
+    color: hsl(212, 21%, 14%);
+    
+}
+#p2{
+    margin-top: 20px;
+    color:  hsl(228, 12%, 48%);
+    line-height: 20px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+.cost_container{
+    display: flex;
+    align-items: center;
+}
+#cost{
+    margin-top: 10px;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+    
+}
+.cost_container >p{
+    color: hsl(228, 12%, 48%);
+    margin-left: 40px;
+    font-family: 'Montserrat', sans-serif;
+}
+#btn_div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    background-color: hsl(158, 36%, 37%);
+    border-style: none;
+    border-radius: 10px;
+    width: 300px;
+    height: 45px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: hsl(0, 0%, 100%);
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s;    
+}
+button:hover{
+    background-color:hsl(159, 49%, 23%) ;
+    cursor: pointer;
+
+}
+@media only screen and (min-width:450px) {
+
+    .container{
+        flex-direction: row;
+        
+    }
+    aside{
+        margin-left: 10px;
+    }
+    .img_container{
+        border-radius: 15px;
+    }
+    
+}
